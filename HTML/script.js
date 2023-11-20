@@ -37,5 +37,76 @@ let lastName = "";
 
 console.log("Value of a =",a)
 
-let greaterNumberOfThisTwoNumbers
 
+// var num = 10;
+
+// if(true)
+// {
+//     var num = 9;
+
+//     console.log("Inside if block", num);
+// }
+
+// console.log("Outside if block", num);
+
+
+// let num=null;
+
+// console.log("Num", num)
+
+
+// let arr = [1,2,3,4,5,"sample1",3,"sampl2","sample3",true,null,undefined,[2,4,3,6]]
+
+// console.log("Array", arr.length);
+
+// function addTwoNum(num1,num2)
+// {
+//    console.log("Addition of 2 nos = ", num1+num2)
+// }
+
+// addTwoNum(12,13)
+
+
+
+
+// Objects
+
+let student = {rollNo: 1234, batch: "1st Year", stream: "Electrical", cgpa:8.7};
+
+student.name = "ram"
+
+console.log("Object Details", student)
+
+
+
+let student1 = {name:"ram", details:{rollNo:1234, batch:"2nd Year"}}
+
+console.log("Student1 ", student1);
+
+
+if(1 === "1")
+{
+    console.log("Hi!")
+}
+
+// == Loose Equality
+// === Strong Equality
+
+let result = a>b? true : false // Ternary Operator
+
+//  condition ? trueValue : falseValue
+
+if(a>b)
+{
+    result = true;
+}
+else{
+    result = false;
+}
+
+if(2)
+{
+
+}
+
+undefined,null,0,false,"",NaN
