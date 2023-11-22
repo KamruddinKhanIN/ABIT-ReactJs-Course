@@ -92,21 +92,50 @@ if(1 === "1")
 // == Loose Equality
 // === Strong Equality
 
-let result = a>b? true : false // Ternary Operator
+// let result = a>b? true : false // Ternary Operator
 
 //  condition ? trueValue : falseValue
 
-if(a>b)
+// if(a>b)
+// {
+//     result = true;
+// }
+// else{
+//     result = false;
+// }
+
+// if(2)
+// {
+
+// }
+
+// Object
+
+let students = { name: "Ram", age:23, batch: "2nd Year", stream: "CSE" }; 
+
+for ( let key in students)
 {
-    result = true;
-}
-else{
-    result = false;
+    console.log(key, students[key]);
 }
 
-if(2)
+if('firstName' in students)
 {
-
+    console.log("True")
+}
+else
+{
+    console.log("False")
 }
 
-undefined,null,0,false,"",NaN
+// Arrow Function
+
+function addTwoNum(a,b)
+{
+    return a+b;
+}
+
+const addTwoNum = (a,b)=>
+{
+    return a+b;
+}
+
