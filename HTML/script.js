@@ -1,5 +1,19 @@
 // let vs var vs const
 
+multiplyTwoNums(2,3);
+
+console.log("Value of hois ", hois)
+
+
+
+
+
+function multiplyTwoNums(a,b)
+{
+    console.log("Multiplication of two nos is ", a*b)
+}
+
+var hois = 10;
 
 // var a =10;
 
@@ -129,13 +143,117 @@ else
 
 // Arrow Function
 
-function addTwoNum(a,b)
+// function addTwoNum(a,b)
+// {
+//     return a+b;
+// }
+
+// const addTwoNum =  (a,b)=>
+// {
+//     return a+b;
+// }
+
+
+// let numArray = [1,2,3,4,5];
+
+// console.log("Array before any operation ", numArray)
+
+// numArray.push("Sample");
+
+// numArray.unshift(0)
+
+// numArray.splice(3,1,"Sample1",3,5,6)
+
+// numArray.pop();
+
+// numArray.shift();
+
+// numArray.splice(2,1)
+
+// console.log("Array after operation ", numArray)
+
+// console.log("Elements after slicing ", numArray.splice(4,3))
+
+
+
+// Callback Fns
+
+// function callBack(()=>{})
+// {
+    
+// }
+
+
+let numArray = ["Apple", "Grapes", "Orange", "Pineapple"];
+
+numArray.map((fruit)=> {console.log(`The fruit is `, fruit)})
+
+
+
+
+let result1 = addTwoNum(2,3);
+let result2 = addTwoNum(5,6);
+
+
+try
 {
-    return a+b;
+    const subTwoNums = (a,b)=>
+    {
+        return a-b;
+    }
+}
+catch(err)
+{
+    console.log("Error ", err)
 }
 
-const addTwoNum = (a,b)=>
-{
-    return a+b;
-}
+
+// Event Loop
+
+//  Hoisting
+
+
+//  JSON - JavaScript Object Notation 
+
+// {
+//     "name": "John Doe",
+//     "age": 30,
+//     "isStudent": false,
+//     "address": {
+//       "street": "123 Main St",
+//       "city": "Anytown"
+//     },
+//     "hobbies": ["reading", "cooking", "traveling"]
+// }
+
+
+// [
+//     {
+//       "name": "Apple",
+//       "color": "red"
+//     },
+//     {
+//       "name": "Banana",
+//       "color": "yellow"
+//     },
+//     {
+//       "name": "Orange",
+//       "color": "orange"
+//     }
+//   ]
+
+
+
+React
+  
+
+
+
+
+
+
+
+
+
+
 
