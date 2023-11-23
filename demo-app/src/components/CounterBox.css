@@ -1,0 +1,23 @@
+.counter-container
+{
+    display: flex;
+    background-color: white;
+    font-size: 25px;
+    color: #344151;
+    border-radius: 25%;
+    gap: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.decrement-button
+{
+    border: none;
+}
+
+.increment-button
+{
+    border: none;
+}
