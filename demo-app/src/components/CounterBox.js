@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './CounterBox.css'
 import Button from './Button'
 
@@ -10,12 +10,18 @@ const CounterBox = () => {
     {
         setValue(0);
     }
+
+    useEffect(()=>
+    {
+      console.log("Component Loaded")
+    },[value])
   return (
     <div>
       <div className='counter-container'>
         <button className='decrement-button' onClick={()=>{setValue(value-1)}}>-</button>
         <div>{value}</div>
         <button className='increment-button' onClick={()=>{setValue(value+1)}}>+</button>
+        
       </div>
 
       <Button resetHandler={resetHandler}></Button>
