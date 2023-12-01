@@ -18,6 +18,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { useState } from 'react';
 import { authSignUp } from '../../service/auth.service';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -72,6 +73,7 @@ export default function SignUp() {
     if (response?.data) {
       localStorage.setItem('userData', JSON.stringify(response?.data));
       navigate('/', { replace: true });
+      toast.success('Account Created Successfully');
     }
   };
 
@@ -228,7 +230,7 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/login" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>

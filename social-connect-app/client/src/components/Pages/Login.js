@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { authSignIn } from '../../service/auth.service';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 
 function Copyright(props) {
   return (
@@ -50,7 +51,12 @@ export default function Login() {
     if (response?.data) {
       localStorage.setItem('userData', JSON.stringify(response?.data));
       console.log('Login Success');
+      toast.success('Login Successfull');
       navigate('/', { replace: true });
+    } else {
+      toast.error('Wrong Credentials');
+      setEmail('');
+      setPassword('');
     }
   };
 
@@ -141,7 +147,7 @@ export default function Login() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
+                  <Link href="/signup" variant="body2">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

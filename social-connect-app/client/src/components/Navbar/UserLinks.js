@@ -11,6 +11,9 @@ const UserLinks = () => {
     localStorage.clear();
     navigate('/');
   };
+
+  const userData = JSON.parse(localStorage.getItem('userData'));
+
   return (
     <div className=" flex justify-center items-center cursor-pointer">
       <div className="hover:translate-y-1 duration-500 ease-in-out hover:text-blue-500">
@@ -85,7 +88,7 @@ const UserLinks = () => {
           className=" ml-4 font-roboto text-sm 
         text-black font-medium no-underline"
         >
-          Kamruddin
+          {userData?.firstName}
         </p>
       </div>
     </div>

@@ -18,10 +18,12 @@ import Card3 from '../../assets/Card3.jpg';
 import Card4 from '../../assets/Card4.jpg';
 import Card5 from '../../assets/Card5.jpg';
 import { getPosts, postContents } from '../../service/auth.service';
+import { AvatarGenerator } from 'random-avatar-generator';
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
   const [content, setContent] = useState('');
+  const generator = new AvatarGenerator();
 
   const handleShare = async () => {
     await postContents({ content });
@@ -138,7 +140,7 @@ const Home = () => {
                     }}
                   >
                     <Avatar
-                      src={avatar}
+                      src={generator.generateRandomAvatar()}
                       style={{
                         borderRadius: '50%',
                         width: '40px',
